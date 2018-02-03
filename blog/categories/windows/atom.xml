@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: windows | My Octopress Blog]]></title>
+  <link href="http://hfase01.github.io/blog/categories/windows/atom.xml" rel="self"/>
+  <link href="http://hfase01.github.io/"/>
+  <updated>2018-02-03T10:41:53-05:00</updated>
+  <id>http://hfase01.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Windows 7 admin shortcuts]]></title>
+    <link href="http://hfase01.github.io/blog/2014/01/14/windows-7-admin-shortcuts/"/>
+    <updated>2014-01-14T15:55:05-05:00</updated>
+    <id>http://hfase01.github.io/blog/2014/01/14/windows-7-admin-shortcuts</id>
+    <content type="html"><![CDATA[<p>A little trick to help you access all the administrative functions of Windows 7 with shortcuts.
+All you need to do is create a folder on your desktop and rename it with the following name.
+<code>
+yournamehere.{ed7ba470-8e54-465e-825c-99712043e01c}
+</code>
+For this example we will use &ldquo;yournamehere&rdquo; however you can use whatever name you would like in place of it.
+After you create your folder and re-name it according to the example above you should have a folder that looks like the folowing picture.
+<img src="http://i.imgur.com/Va7YM9F.png" alt="Windows-7_admin_folder"></p>
+]]></content>
+  </entry>
+  
+</feed>
