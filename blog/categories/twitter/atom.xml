@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: twitter | My Octopress Blog]]></title>
+  <link href="http://hfase01.github.io/blog/categories/twitter/atom.xml" rel="self"/>
+  <link href="http://hfase01.github.io/"/>
+  <updated>2018-02-03T11:23:39-05:00</updated>
+  <id>http://hfase01.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Automatically follow new Twitter followers]]></title>
+    <link href="http://hfase01.github.io/blog/2014/01/24/automatically-follow-new-twitter-followers/"/>
+    <updated>2014-01-24T17:56:48-05:00</updated>
+    <id>http://hfase01.github.io/blog/2014/01/24/automatically-follow-new-twitter-followers</id>
+    <content type="html"><![CDATA[<p>Are you getting a lot of followers on your Twitter account? Do you want to follow them also, without laboriously clicking follow for every single one? If you are a Mac or Linux user I have an easy trick for you to manage following/un-following a lot of people on Twitter at one time.<!--more-->
+What I use to automate Twitter is a command line program written in Ruby, this program is a RubyGem called &ldquo;T&rdquo; and you can learn more about it on <a href="https://github.com/sferik/t">GitHub - Sferik/t</a>. Installation of this RubyGem is pretty straight-forward, if you already have Ruby installed you can install the gem itself with the following command.
+<code>
+gem install t
+</code>
+After installing the gem there are a few configuration settings you will need to get started with to authorize this application to use your Twitter account. Pretty easy, just set up an application with your Twitter account as you are directed on the GitHub page for this gem and copy some numbers to a file. Once you get it set up you can use something like the following command loop to automatically follow-back any new follower to your twitter account.
+<code>
+while true; do "t groupies | xargs t follow"; sleep 2; done
+</code>
+The above command string will check for new followers every two seconds and follow them back, without you doing anything.</p>
+]]></content>
+  </entry>
+  
+</feed>
