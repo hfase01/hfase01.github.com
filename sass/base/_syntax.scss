@@ -39,6 +39,25 @@ $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace 
   }
   border: 1px solid $pre-border !important;
 }
+
+pre .line.marked {
+  position: relative;
+  display: block;
+  &:after {
+    content: "";
+    position: absolute;
+    background: $marker-bg;
+    left: -.8em; top: 0; bottom: 0; right: -.8em;
+    border: 1px solid { left-color: $marker-border-left; left-width: 2px; right-color: $marker-border; top: 0; bottom: 0; }
+  }
+  &.start:after {
+    border-top: 1px solid $marker-border;
+  }
+  &.end:after {
+    border-bottom: 1px solid $marker-border;
+  }
+}
+
 figure.code, .gist-file, pre {
   @include box-shadow(rgba(#000, .06) 0 0 10px);
   .highlight pre { @include box-shadow(none); }
@@ -71,7 +90,7 @@ html .gist .gist-file {
    } @else {
      background: $base02 $noise-bg;
    }
-   @extend .sans;
+   @extend .sans !optional;
    line-height: 1.5em;
     a {
       color: mix($base1, $base01) !important;
@@ -93,7 +112,7 @@ html .gist .gist-file {
 pre {
   background: $pre-bg $noise-bg;
   @include border-radius(.4em);
-  @extend .mono;
+  @extend .mono !optional;
   border: 1px solid $pre-border;
   line-height: 1.45em;
   font-size: 13px;
@@ -109,7 +128,7 @@ h3.filename {
 
 p, li {
   code {
-    @extend .mono;
+    @extend .mono !optional;
     display: inline-block;
     white-space: no-wrap;
     background: #fff;
